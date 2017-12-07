@@ -33,6 +33,10 @@ public class Periode {
         this.einddatum = einddatum;
     }
 
+    public Periode copy() {
+        return new Periode(begindatum, einddatum);
+    }
+
     @Override
     public String toString() {
         return "Periode{" +
